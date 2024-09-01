@@ -20,7 +20,9 @@ class BooksController < ApplicationController
       # The 'new' action is NOT being called here
       # Assign any instance variables needed
       # @count = Book.count
-      render('new')
+      flash[:notice] = "Fields can't be blank."
+      redirect_to new_book_path
+      
     end
   end
 
@@ -54,6 +56,9 @@ class BooksController < ApplicationController
   def book_params
     params.require(:book).permit(
       :title,
+      :author,
+      :price,
+      :published
     )
   end
 end

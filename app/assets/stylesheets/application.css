@@ -58,7 +58,7 @@ a:hover, a:active, input[type=submit]:hover {
     background: rgb(177, 176, 176);
 }
 
-input[type=text] {
+input[type=text], input[type=number], input[type=date_select] {
     padding: 12px 20px;
     margin: 8px 0;
     box-sizing: border-box;
@@ -66,5 +66,10 @@ input[type=text] {
 
 .notice {
     background-color: lightgreen;
+    padding: 15px;
+}
+
+.badnotice {
+    background-color: rgb(230, 99, 99);
     padding: 15px;
 }
