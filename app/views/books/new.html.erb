@@ -16,3 +16,9 @@
 
   <% end %>
 </div>
+
+<br></br>
+
+<% if flash[:notice] %>
+  <div class="badnotice"><%= flash[:notice] %></div>
+<% end %>
