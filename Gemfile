@@ -74,3 +74,8 @@ group :test do
   gem 'simplecov', :require => false
   gem 'rubocop-rails', :require => false
 end
+
+gem 'devise'
+gem 'omniauth'
+gem 'omniauth-google-oauth2'
+gem 'omniauth-rails_csrf_protection'
